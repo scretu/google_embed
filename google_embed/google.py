@@ -295,5 +295,5 @@ def content_object_init(instance):
     directives.register_directive('streetview', StreetView)
 
 def register():
-    signals.content_object_init.connect(content_object_init)
+    signals.initialized.connect(content_object_init)
 
